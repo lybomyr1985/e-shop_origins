@@ -1,0 +1,61 @@
+.prod-list_controller {
+        float: left;
+        position: relative;
+        bottom: -11px;
+}
+.prod-list{
+        padding-left: 86px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+.prod-elem{
+      
+        display: flex;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+}
+.prod-list:hover{
+       position: absolute;
+        margin-left:-10px;
+        margin-top:-10px;
+        border: 1px solid grey;
+}
+.btn-success {
+       
+        margin-bottom: 18px;
+}
+/*
+.prod-list{
+        float: left;
+        margin-left: 4%;
+        margin-right: 4%;
+
+}
+.prod-list .btn-add_to_cart{
+         
+        margin-left: 37%;
+
+}*/
+.prod-elem img{
+        max-width: 100%;
+}
+/*
+.prod-list .prod-elem h3{
+        position: relative;
+        left: 22%;
+ }
+ .prod-list_controller  .prod-list .prod-elem div{
+        position: relative;
+        left: 24%;
+ }
+ 
+ 
+
+
+.prod-elem img{
+        max-width: 100%;
+}
+*/

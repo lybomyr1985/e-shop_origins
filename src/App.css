@@ -1,0 +1,43 @@
+#root{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+     background-color: #abaaa8;
+     -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.68);
+     -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.68);
+     box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.68);
+    }
+.title-header img{
+    max-width: 100%;
+    padding-left: 53px;
+}
+.head-cont{
+    width: 100%;
+    height: 100%;
+}
+.cart-block{
+    padding-left: 100%;
+}
+ .cart-block a div{
+    display: flex;
+ }
+ .cart-block a div h3{
+    padding: 13px;
+ }
+
+ .cart-block a img{
+  
+    height: 57px;
+}
+
+.head-cont{
+    display: inline;
+}
+
+.product-cont{
+    margin-bottom: 5%;
+}
