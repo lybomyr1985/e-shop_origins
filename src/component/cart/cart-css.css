@@ -1,3 +1,39 @@
-.cart-container{
+/*.cart-container{
     padding-left: 20%;
+}
+*/
+.buck-block{
+    display: flex;
+    height: 100px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid  darkblue;
+}
+
+
+.buck-block_item{
+    display: flex;
+    width: 100%;
+}
+.buck-block_item img{
+    width: 100px;
+    margin-right: 25%;
+}
+
+.buck-n_p{
+    margin-right: 5%;
+    margin-right: 10%;
+    font-size: 2.0em;
+    flex-direction: column;
+    DISPLAY: flex;
+    align-items: center;
+
+
+}
+
+.buck-btn{
+    DISPLAY: flex;
+    align-items: center;
+}
+.buck-prise{
+    color: red;
 }

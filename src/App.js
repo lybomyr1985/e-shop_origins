@@ -37,8 +37,7 @@ class App extends Component {
        
         </header>
        
-             
-               
+                           
                <ProductList products={this.props.p}/>
      
       </div>

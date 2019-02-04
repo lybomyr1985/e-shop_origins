@@ -55,9 +55,14 @@ const prod =products.map((item ,key)=>{
  
  
 		return(
+      <div>
       <div className="prod-list_controller">
           {prod}
-          <button onClick={this.addToMock}>Mock button</button>
+         
+      </div>
+         <div className="btn-prod_list">
+           <button onClick={this.addToMock}>Mock button</button>
+          </div>
       </div>
     
    

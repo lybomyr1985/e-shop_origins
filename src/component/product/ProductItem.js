@@ -14,15 +14,17 @@ state={
   const{pr}=this.props;
   console.log('pr'+this.state.pro);
         return (
-            <div>
-                 ProductItem{this.props.match.params.id} 
+            <div className="product-item_cont">
+             <NavLink to={`/`}> <Button color="secondary"> Back</Button></NavLink>
+                <div className="product-item_element">
+                
                  <h3>{pr.name}</h3>
                     <Product
-                        id={pr.id}
-                        image={"/"+pr.image}
+                     image={"/"+pr.image}
                     />
-             
-            <NavLink to={`/`}> <Button color="secondary"> Back</Button></NavLink>
+                    <div className="product-item_price"> <span>Price</span>:{pr.price}</div>
+             </div>
+           
             </div>
         );
     }

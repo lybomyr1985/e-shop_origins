@@ -4,7 +4,9 @@ import Product from "../product/Product"
 import {removeFromCart} from '../../actions/actionCart'
 import {connect} from 'react-redux';
  
+import "./cart-css.css"
 import { Button } from 'reactstrap';
+
  class CartList extends Component{
 
  removeFromCart_(value){
@@ -28,15 +30,18 @@ render(){
 
   return(
     
-   <div key={key}>
-           <div>
-                  <Product  
-                      image={item.image}
-                      name= {item.name}
-                      price={item.price}
-                      />
+   <div key={key} className="buck-block">
+           
+                 <div className="buck-block_item"> 
+                      <img src={item.image}/>
+                      <div className="buck-n_p">
+                      <div className="buck-block_name">{item.name}</div>
+                      <div className="buck-block_price">{item.price}</div>
+                      </div>
+                  </div> 
+                  <div className="buck-btn">
                     <  Button color="danger" onClick={()=>{this.removeFromCart_(key,item.name)}}>Remoove from the Cart</Button>
-         </div>   
+                  </div>
     </div>
     )});
 
@@ -44,9 +49,9 @@ render(){
 		return(
       <div>{prodcc}
       <div>
-        <h3>All prise {summ }</h3>
+        <h3 className="buck-prise">All prise {summ }</h3>
       </div>
-     <button onClick={this.addToMock}>Mock button</button>
+    
       </div>
     
 			)
