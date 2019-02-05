@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {NavLink} from 'react-router-dom'
 import './product-css.css'
 import { Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 class ProductItem extends Component {
 state={
@@ -14,18 +15,26 @@ state={
   const{pr}=this.props;
   console.log('pr'+this.state.pro);
         return (
-            <div className="product-item_cont">
-             <NavLink to={`/`}> <Button color="secondary"> Back</Button></NavLink>
-                <div className="product-item_element">
-                
-                 <h3>{pr.name}</h3>
-                    <Product
-                     image={"/"+pr.image}
-                    />
-                    <div className="product-item_price"> <span>Price</span>:{pr.price}</div>
-             </div>
-           
-            </div>
+        <div className="product-item_cont">
+            <Container>
+                <Row>
+                    <Col>
+                     <NavLink to={`/`}> <Button color="secondary"> Back</Button></NavLink>
+                     </Col>
+                </Row>
+                <Row>
+                    <Col> 
+                        <div className="product-item_element">
+                                <h3>{pr.name}</h3>
+                                <Product image={"/"+pr.image} />
+                                <div className="product-item_price">
+                                    <span>Price</span>:{pr.price}
+                                </div>
+                         </div>
+                     </Col>
+                </Row>
+           </Container>
+        </div>
         );
     }
 }

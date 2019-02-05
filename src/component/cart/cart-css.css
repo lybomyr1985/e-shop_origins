@@ -37,3 +37,36 @@
 .buck-prise{
     color: red;
 }
+
+@media screen and (max-width: 768px){
+ 
+    .buck-n_p {        
+        font-size: 1.2em;
+            }
+
+            .buck-btn{
+
+            }
+             .buck-btn button {
+            font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .buck-block {
+        flex-direction: column;
+         align-items: center;
+        height: 215px;
+    }
+    .buck-block_item {
+         flex-direction: column;
+         align-items: center;
+               }
+   .buck-n_p {
+    font-size: 1.0em;
+        }
+
+}
+
+

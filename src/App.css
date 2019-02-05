@@ -1,8 +1,6 @@
-#root{
  
-}
 .content{
-   width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 header{
@@ -70,29 +68,88 @@ header{
         width: 480px;
             }
      
-            .cart-block a img {
-                height: 38px;
+    .cart-block a img {
+        height: 38px;
             }
-            .cart-block a div h3 {
-                font-size: 1.5em;
-                padding: 6px;
+   .cart-block a div h3 {
+       font-size: 1.5em;
+       padding: 6px;
             }
  } 
 
  @media  screen and (max-width:425px){
     .content{
         width: 380px;
-       
             }
-            .cart-block {
-                padding-left: 47%;
+    .cart-block {
+        padding-left: 47%;
+    }
+    .cart-block a img {
+        height: 38px;
+    }
+   .content  .App .title-header  {
+        /* max-width: 100%; */
+        padding-left: 14px;
+        width: 150px;
             }
-            .cart-block a img {
-                height: 38px;
+ } 
+ @media  screen and (max-width:425px){
+    .content{
+        width: 340px;
             }
-               .title-header  {
-                /* max-width: 100%; */
-                padding-left: 14px;
-    width: 170px;
+   
+ } 
+
+ @media  screen and (max-width:375px){
+    .content{
+        width: 300px;
             }
+            cart-block a img {
+                height: 28px;
+            }
+
+            .cart-block a div h3 {
+                font-size: 1.1em;
+                padding: 6px;
+            }
+ } 
+
+ @media  screen and (max-width:425px){
+    .content{
+        width: 340px;
+            }
+   
+ } 
+
+ @media  screen and (max-width:375px){
+       .content{
+        width: 300px;
+            }
+        header {
+          height: 86px;
+               }
+    .cart-block a img {
+        height: 28px;
+    }
+
+    .cart-block a div h3 {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+ } 
+
+ @media  screen and (max-width:320px){
+    .content{
+        width: 300px;
+            }
+    .cart-block a img {
+        height: 28px;
+            }
+    header {
+        height: 86px;
+            }
+    .cart-block a div h3 {
+        font-size: 0.8em;
+        padding: 6px;
+         }
  } 
